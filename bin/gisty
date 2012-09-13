@@ -42,6 +42,7 @@ end
 
 load_commnads Gisty::COMMAND_PATH
 load_commnads File.join(ENV['GISTY_DIR'], 'commands')
+load_commnads File.join(__FILE__, '..', '..', 'lib', 'commands')
 
 if ARGV.size == 0
   @cmds['help'].call []
